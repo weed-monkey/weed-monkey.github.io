@@ -1,6 +1,5 @@
-// Replace 'YOUR_API_KEY' with your actual YouTube Data API key
-const apiKey = 'AIzaSyCJkcHI77coPVGu_4v-uwnbuNelhWnmzzc';
-const channelId = 'UCvulgQYQPPUMwCs7tKMXO0g'; // Replace with the actual channel ID
+const apiKey = '';
+const channelId = 'UCvulgQYQPPUMwCs7tKMXO0g'; 
 const fs = require("fs")
 async function fetchVideos(apiKey, channelId, maxVideos = 100) {
     const videos = [];
