@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>WM - Casino</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="https://secure.gravatar.com/avatar/439aeaff7de2bae365adc3eb4947b44d?s=96&#038;d=mm&#038;r=g">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1 id="title">Casino</h1>
+        <hr id="rule">
+        <div id="craigdiv">
+        <img id="craigimg" src>
+        </div>
+        <div id="balance">
+            <h3>balance</h3>
+            <hr>
+            <h3>
+                $<div id="bank">1000</div>
+            </h3>
+            <img src="https://secure.gravatar.com/avatar/439aeaff7de2bae365adc3eb4947b44d?s=96&#038;d=mm&#038;r=g">
+            <hr>
+            <div id="history">
+                <h4>history</h4>
+                <h3>
+                    1. <div id="history1">0</div>
+                </h3>
+                <h3>
+                    2. <div id="history2">0</div>
+                </h3>
+                <h3>
+                    3. <div id="history3">0</div>
+                </h3>
+                <button title="resets bank to $100 (only if $100 in debt)" id="resetBank" style="
+    bottom: -109;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 165px;
+    font-size:30px;
+">reset</button>
+            </div>
+        </div>
+        <script src="inject.js" async defer></script>
+        <h2>GAMES</h2>
+        <div id="guess">
+            <h3>
+                <u>Guess:</u>
+            </h3>
+            <p>guess the number, chosen from 1-20</p>
+            <p>a correct guess gives you 15x your money back!</p>
+            <h3>input your guess below</h3>
+            <input id="guessed">
+            <h3>input your bet below</h3>
+            <input id="invested1">
+            <br>
+            <button id="go1">Go for it</button>
+            <h3 id="result1"></h3>
+            <h1 id="result2"></h1>
+        </div>
+        <div id="blackjack">
+            <h3>
+                <u>Blackjack:</u>
+            </h3>
+            <p>Look up the rules if you don't know them, too complex to explain here</p>
+            <p>winning results in double your bet. </p>
+            <p>please note, this is a simplified version of blackjack, no insurance or ace+10, infinite deck. aces are calculated for you, dealer cannot draw above 17. just get above the dealer and below 22 (innit)</p>
+            <div id="table">
+                <div id="dealer1">
+                    <h3>Dealer</h3>
+                    <hr>
+                    <div id="dealerCards"></div>
+                </div>
+                <p>value: 
+                <div id="dealerVal"></div>
+</p><hr>
+<div id="player1">
+    <h3>You</h3>
+    <hr>
+    <div id="playerCards"></div>
+</div>
+<p>value: 
+<div id="playerVal"></div>
+</p></div><h3 id="bjbj">input your bet below</h3>
+<input id="invested2">
+<br>
+<button id="bjStart">Start</button>
+<div id="bjButtons">
+    <button id="hit">Hit</button>
+    <button id="stand">Stand</button>
+    <button id="doubleDown">Double Down</button>
+    <button id="reset">Reset</button>
+</div>
+<h1 id="result3"></h1>
+</div>
+<div id="slot-machine">
+    <h1>Alexei's Slot Machine</h1>
+    <h3>Outcomes are as follows:</h3>
+    <div id="slot-outcomes">
+        <h4>Fruits/faces:</h4>
+        <hr>
+        <p>no duplicates - 0x</p>
+        <p>pair of the same fruit - 2x</p>
+        <p>three of the same fruit - 40x</p>
+        <h4>Cats (take priority)</h4>
+        <hr>
+        <p>1 cat - 5x</p>
+        <p>2 cats - 20x</p>
+        <p>3 cats - 200x!!</p>
+        <hr>
+        <h4>Only icons in the middle count!!</h4>
+    </div>
+    <div class="slot-items">
+        <div id="slot-item1">
+            <div id="slot-item-top1">
+                <img class="smallCat" src="">
+                <div id="top-icon1">:3</div>
+            </div>
+            <div id="main-item1">
+                <img id="cat1" src="">
+                <div id="main-icon1">🍒</div>
+            </div>
+            <div id="slot-item-bottom1">
+                <img class="smallCat" src="">
+                <div id="bottom-icon1">🍋</div>
+            </div>
+        </div>
+        <div id="slot-item2">
+            <div id="slot-item-top2">
+                <img class="smallCat" src="">
+                <div id="top-icon2">🍊</div>
+            </div>
+            <div id="main-item2">
+                <img id="cat2" src="">
+                <div id="main-icon2">🍊</div>
+            </div>
+            <div id="slot-item-bottom2">
+                <img class="smallCat" src="">
+                <div id="bottom-icon2">🍊</div>
+            </div>
+        </div>
+        <div id="slot-item3">
+            <div id="slot-item-top3">
+                <img class="smallCat" src="">
+                <div id="top-icon3">🍋</div>
+            </div>
+            <div id="main-item3">
+                <img id="cat3" src="">
+                <div id="main-icon3">🍇</div>
+            </div>
+            <div id="slot-item-bottom3">
+                <img class="smallCat" src="">
+                <div id="bottom-icon3">🍋</div>
+            </div>
+        </div>
+    </div>
+    <h3>input your bet below</h3>
+    <input id="invested3">
+    <br>
+    <button id="slot-button" onclick="spin()">Spin</button>
+</div>
+<div id="changelog">
+    <h2>Changelog - most recent first</h2>
+    <hr>
+    <h3>
+        <u>29/01/2025 21:37 (0.7)</u>
+    </h3>
+    <p>
+        blackjack overhaul!!!<br>
+        you can now double down!!<br>
+        trendy new UI!!!!!!<br>
+        also shrank and moved craig a bit<br>
+    </p>
+        <h3>
+        <u>9/01/24 22:11 (0.6)</u>
+    </h3>
+    <p>
+        CRAIG HAS EMOTION!<br>
+        he just chills out there, has 4 emotions:<br>
+        1. VERY HAPPY - when you are loaded<br>
+        2. neutral/happyish - when you haven't made a big loss/a moderate amount of cash<br>
+        3. sad - when you've lost a significant amount of money from the starting $1k<br>
+        4. VERY ANGRY - when you're at 0 or below... he makes his anger quite clear here<br>
+    </p>
+    <h3>
+        <u>23/12/23 23:51 (0.5 still)</u>
+    </h3>
+    <p>
+        debt now has a message telling ya you earned less... looks a bit ugly<br>
+        need to make pressing enter on the input for the slots spin 'em - should finish quickly<br>
+        <u>23:57</u>
+        <br>kinda wish i did that quicker tbh - also i think im gonna use this format (time within the same post) but i doubt ill ever use this changelog again
+
+    </p>
+    <h3>
+        <u>23/12/23 23:38 (0.5 still)</u>
+    </h3>
+    <p>
+        ALSO forgot to mention you can go 100 dollars in debt now :) <br>
+        it's my gift to the gamblers for the holiday<br>
+        unlucky for you, the bank doesnt like debts - you will lose like 10% of your income when in debt<br>
+        im just gonna listen to music and spin the slots for a few hours... i wonder if it's more fun with real money<br>OH also idk how to make the blackjack images render quicker just get good ig
+
+    </p>
+    <h3>
+        <u>23/12/23 23:33 (0.5)</u>
+    </h3>
+    <p>
+        Starting this a bit late ... Happy Birthday Alexei!<br>
+        Okay, I've added the slot machine, and fiddled with the icons. Fixed the text running onto the same line as well.<br>
+        I did all this stuff a few days ago but only thought to add this now. >:(<br>
+        Let me know if the chances for the slot machine are bad - I've been testing it and getting stupidly lucky.<br>
+        and also craig is now the icon at the top of the page
+    </p>
+</div>
+<!--<script type='text/javascript' src="https://neocities.org/7888c5776c111251095ccda90821e0ea6b782028c93497f4cffede493150e874/loader.js?fn=inject.js"></script>-->
+</body></html>

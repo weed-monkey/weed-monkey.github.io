@@ -1,0 +1,253 @@
+body *{
+  color:red;
+  text-align:center;
+  }
+button{
+width:55%;
+left:50%;
+background-color:blue;
+border-radius:10px;
+border:red;
+}
+body{
+  margin:auto;
+  font-family:"Arial";
+  }
+body{
+  background-color:black;
+  }
+#price1, #price2, #price3, #remaining, #news1, #news2, #news3, #bank, #investment, #perc, #worth, #networth, #aibank, #aiinvestment, #aiperc, #aiworth, #ainetworth{
+display:inline-block;
+}
+
+#stats *, #ai *{
+  color:green;
+  }
+hr{
+  width:100%;
+  }
+
+h3, #bankdiv{
+  font-size:30px;
+}
+#shares{
+  height:30px;
+  }
+
+@media (min-width: 1060px) {
+
+#shares{
+  height:60px;
+  }
+
+
+body *{
+max-width:100%;
+text-align:left;
+}
+
+img{
+position:absolute;
+}
+p, input, h1, h2, a, radio{
+margin: 10px 50px 0px 50px;
+position:relative;
+left:10px;
+color:red;
+font-size:40px;
+}
+
+hr{
+height:5px;
+width:100%;
+color:red;
+background-color:red;
+position:relative;
+border-color:red;
+padding: 0px 0px 0px 0px;
+margin:0px 0px 0px 0px;
+}
+
+#shares{
+width: 40%; 
+}
+
+h4{
+color:green;
+position:relative;
+font-size:80px;
+margin:5px 10px 5px 10px;
+}
+
+#investment, #perc, #worth{
+display:inline-block;
+margin:0px 10px 5px 10px;
+}
+
+body{
+background-color:black;
+}
+
+button{
+text-align:center;
+width:55%;
+height:300px;
+font-size:50px;
+left:50%;
+background-color:blue;
+border:red;
+border-radius:0px;
+transition: all 0.1s;
+}
+
+#BUY, #sell{
+height:130px;
+width:54%;
+}
+
+button:hover{
+background-color:gray;
+font-size:60px;
+transition: all 0.1s;
+}
+
+img{
+position:relative;
+margin:500px 0px 40px 0px;
+}
+
+a:hover{
+color:green;
+}
+
+#link{
+background-color:blue;
+}
+
+#history{
+position:absolute;
+right:0px;
+top:10%;
+font-size:20px;
+color:white;
+background-color:gray;
+width:45%;
+max-width:45%;
+border:5px solid red;
+text-align:center;
+}
+
+#chart{
+position:absolute;
+right:0px;
+background-color:white;
+top:40%;
+max-width:45%;
+height:45%;
+width:45%;
+max-height:45%;
+border:5px solid red;
+}
+
+#history h3, #history h4{
+color:white;
+margin:0px 0px 10px 0px;
+font-size:40px;
+}
+
+#price1, #price2, #price3, #remaining, #news1, #news2, #news3, #bank{
+display:inline-block;
+color:white;
+}
+#sell{
+height:130px;
+width:55%;
+}
+input{
+height:80px;
+margin:10px 20px 10px 0px;
+}
+#bank{
+color:green;
+width:50%;
+}
+#news{
+margin:0px 0px 0px 0px;
+position:absolute;
+right:0px;
+top:85.5%;
+font-size:30px;
+color:white;
+background-color:gray;
+width:45%;
+border:5px solid red;
+text-align:center;
+}
+#news h4{
+font-size:30px;
+}
+#news div{
+color:white;
+}
+#speed{
+width:500px;
+height:100px;
+}
+input{
+background-color:gray;
+color:white;
+font-size:100%;
+}
+#alltime{
+width:80%;
+max-width:80%;
+margin:auto;
+margin-top:20px;
+margin-bottom:50px;
+}
+#credits, #changelog{
+width:100%;
+color:white;
+font-size:30px;
+margin:auto;
+margin-left:100px;
+border:5px solid red;
+margin-bottom:50px;
+}
+#credits h3, #changelog h3{
+width:100%;
+color:white;
+font-size:30px;
+margin:auto;
+margin-left:100px;
+}
+#stats, #ai{
+width:55%;
+border:5px solid red;
+}
+#init{
+background-color:white;
+width:100%;
+height:100%;
+}
+#init input{
+font-size:100px;
+width:900px;
+position:relative;
+display:inline-block;
+}
+#aiinvestment, #aibank, #aiperc, #aiworth{
+display:inline-block;
+}
+#ai{
+padding:60px 0px 20px 0px;
+width:55%;
+margin:0px 0px 0px 0px;
+}
+button{
+width:35%;
+}
+input{
+width:55%;  
+}
+}

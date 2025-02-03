@@ -1,0 +1,12 @@
+body{
+  font-family:sans-serif;
+  background-color:black;
+  color:pink;
+  font-size:30px;
+}
+a{
+  color:red;
+}
+a:hover{
+  color:orange;
+}

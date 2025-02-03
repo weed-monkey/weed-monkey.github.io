@@ -1,0 +1,521 @@
+p, h1, h2, h3, h4, div {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+input, button {
+    z-index: 10;
+}
+
+body {
+    background-color: rgb(0, 0, 40);
+    font-family: sans-serif;
+    color: pink;
+    height: 100%;
+    flex-wrap: wrap;
+    margin: 0px;
+}
+
+.smallCat {
+    height: 60px;
+}
+
+#cat1, #cat2, #cat3 {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+#slot-outcomes {
+    width: 20%;
+    background-color: black;
+    color: red;
+    border: 5px solid red;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#title {
+    color: rgb(254,1,154);
+    text-align: center;
+}
+
+#balance {
+    z-index: 9999;
+    border-color: rgb(254,1,154);
+    border-width: 5px;
+    border-style: solid;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: gray;
+    max-width: 500px;
+    min-width: 120px;
+    text-align: center;
+    font-size: 30px;
+    display: inline-block;
+}
+
+#craigdiv {
+    z-index: 8;
+    border-color: #7b5804;
+    border-width: 5px;
+    border-style: solid;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    background-color: gray;
+    display: inline-block;
+    opacity: 0.7;
+}
+
+#craigimg {
+    width: 250px;
+}
+
+#balance img {
+    height: 73px;
+    position: relative;
+    top: -15px;
+}
+
+#rule {
+    position: relative;
+    height: auto;
+    top: -5px;
+    left: 0px;
+}
+
+#slot-machine {
+    color: black;
+    background-color: #FFA500;
+    height: 1500px;
+    border: 2px solid black;
+}
+
+.slot-items {
+    display: flex;
+    justify-content: space-around;
+    background-color: grey;
+}
+
+#slot-item1,#slot-item2,#slot-item3 {
+    background-color: #8B0000;
+    width: 80%;
+    height: 500px;
+    border: 1px solid black;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-item1,#main-item2,#main-item3 {
+    position: relative;
+    top: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+#slot-item-top1,#slot-item-top2,#slot-item-top3 {
+    position: relative;
+    left: 45%;
+    display: flex;
+    top: 5%;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    opacity: 0.5;
+}
+
+#slot-item-bottom1,#slot-item-bottom2,#slot-item-bottom3 {
+    position: relative;
+    left: 45%;
+    display: flex;
+    bottom: -45%;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    opacity: 0.5;
+}
+
+#bank, #history1, #history2, #history3 {
+    display: inline-block;
+    color: red
+}
+
+#bank {
+    margin-bottom: 10px;
+}
+
+input {
+    position: relative;
+    height: 30px;
+    font-size: 30px;
+    background-color: blue;
+    border: 1px solid red;
+    color: white;
+}
+
+button {
+    border: none;
+    position: relative;
+    top: 10px;
+    height: 50px;
+    color: black;
+    background-color: white;
+    transition: all 0.1s linear;
+    font-size: 40px;
+    width: 500px;
+    margin-top: 3px;
+}
+
+button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    transition: all 0.1s linear;
+}
+
+p {
+    font-size: 17px;
+}
+
+@keyframes floatUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0) rotateZ(-15deg);
+    }
+
+    50% {
+        transform: translateY(-50px) rotateZ(15deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-100px) rotateZ(-15deg);
+    }
+}
+
+.floating-number {
+    user-select: none;
+    pointer-events: none;
+    font-weight: bold;
+    position: fixed;
+    top: calc(85% - 100px);
+    font-size: 120px;
+}
+}
+
+#guess {
+    color: black;
+    border-top: solid rgb(150, 150, 150) 5px;
+    border-bottom: solid 5px rgb(150, 150, 150);
+    background-color: rgb(235, 100, 127);
+}
+
+#blackjack {
+    color: rgb(255, 215, 0);
+    border-top: solid rgb(150, 150, 150) 5px;
+    border-bottom: solid 5px rgb(150, 150, 150);
+    background-color: rgb(128, 0, 0);
+    max-width: 100%;
+}
+
+#result2 {
+    position: relative;
+    text-align: center;
+}
+
+#table {
+    border: 5px solid black;
+    position: relative;
+    margin: auto;
+    width: 90%;
+    color: black;
+    background-color: rgb(0, 206, 0);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#dealer1, #player1 {
+    min-height: 200px;
+    position: relative;
+    top: 20px;
+    height: 250px;
+    display: inline-block;
+}
+
+#table p, #table div {
+    margin-left: 5px;
+}
+
+#table * img {
+    height: 130px;
+}
+
+#stand, #hit, #reset, #doubleDown {
+    display: none;
+}
+
+#blackjack {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#table {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #008000;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#dealer1, #player1 {
+    width: 48%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 1%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#dealerCards, #playerCards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#dealerCards img, #playerCards img {
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#dealerVal, #playerVal {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 10px;
+}
+
+#bjbj {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+#invested2 {
+    width: 200px;
+    text-align: center;
+    margin: 10px auto;
+    display: block;
+    border-radius: 5px;
+    border: 2px solid #ff0000;
+    background-color: #0000ff;
+    color: #fff;
+    font-size: 20px;
+}
+
+#bjButtons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#bjButtons button {
+    width: 150px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#bjButtons button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#result3 {
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+    margin-top: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#dealerCards img, #playerCards img {
+    height: 120px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#bjStart {
+    width: 200px;
+    font-size: 24px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 10px auto;
+    display: block;
+}
+
+#bjStart:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#bjButtons button {
+    width: 180px;
+    font-size: 24px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#table p, #table h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    margin: 10px 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#dealerVal, #playerVal {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    text-align: center;
+}
+
+#table {
+    text-align: center;
+}
+
+#dealer1, #player1 {
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 1%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    vertical-align: top;
+}
+
+#dealerCards img, #playerCards img {
+    height: 116.4px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#bjStart, #bjButtons button {
+    width: 485px;
+    font-size: 40px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#bjStart {
+    width: 194px;
+    font-size: 24px;
+    margin: 10px auto;
+    display: block;
+}
+
+#table {
+    width: 87.3%;
+    margin-top: 29.1px;
+    margin-bottom: 29.1px;
+}
+
+#dealer1, #player1 {
+    width: 46.56%;
+    margin: 0.97%;
+    padding: 9.7px;
+}
+
+#invested2 {
+    width: 200px;
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 2px solid #ff0000;
+    background-color: #0000ff;
+    color: #fff;
+    font-size: 20px;
+}
+
+#bjStart {
+    width: 194px;
+    font-size: 24px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#invested2 {
+    margin-bottom: 0px;
+}
+
+#bjStart {
+    margin-top: 0px;
+}
+
+#table p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+#dealerVal, #playerVal {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
+}
