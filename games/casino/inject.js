@@ -664,4 +664,4 @@ inputs.forEach(input=>{
 }
 );
 
-transaction(0)}
+transaction(0)
